@@ -39,8 +39,8 @@ body {
 
 #bottom-contener {
     height: 90vh;
-    /*width: 100vw;*/
-    background-color: #f0f0f0;
+    /*width: 100vw;
+    background-color: #f0f0f0;*/
 
     display: flex;
     justify-content: center;
@@ -65,7 +65,7 @@ body {
     /*width: 98vw;*/
     margin: 0 1vw 0 1vw;
     border-radius: 5vh;
-    background-color: #000000;
+    background-color: rgb(44, 44, 44);
 }
 
 
@@ -85,7 +85,7 @@ body {
     grid-row-gap: 2%;
 
 
-    background-color: rgb(237, 166, 100);
+    /*background-color: rgb(237, 166, 100);*/
     padding: 2%;
 }
    
