@@ -14,10 +14,12 @@ document.getElementById("bottom-contener").addEventListener("click", exit_full_s
 
 function on_personal_project_click() {
     project_center.textContent = "Personal Projects"
+    is_personal_project = 1;
 }
 
 function on_school_project_click() {
     project_center.textContent = "School Projects"
+    is_personal_project = 0;
 }
 
 function toggle_project_type() {
