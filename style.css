@@ -9,6 +9,10 @@ body {
     overflow-x: hidden; 
 }
 
+a:hover {
+    background-color: yellow;
+}
+
 .center-item {
     display: flex;
     align-items: center;
@@ -52,7 +56,8 @@ body {
     height: 15vh;
     width: 15vw;
 
-    background-color: #ecd96afd;
+    background-color: #3498db;
+    /*background-color: #ecd96afd;*/
     border-radius: 5vh;
     position: absolute;
 

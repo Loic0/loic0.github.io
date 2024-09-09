@@ -11,6 +11,7 @@ document.querySelectorAll('.project').forEach((project, index) => {
     const center_circle = document.getElementById('center-project-circle');
     const center_circle_radius = center_circle.offsetWidth / 2;
     const distance_from_circle = window.innerHeight * 0.30; 
+    
     function placeRectangle() {
         const x = (center_circle_radius + distance_from_circle) * Math.cos(angle * Math.PI / 180);
         const y = (center_circle_radius + distance_from_circle) * Math.sin(angle * Math.PI / 180);
@@ -72,7 +73,7 @@ document.querySelectorAll('.project').forEach((project, index) => {
             move_project();
 
             if (is_big[index]) {
-                project.style.opacity = 0.9
+                /*project.style.opacity = 0.9*/
                 project.style.transform = "scale(5.7)"
             }
             else {
