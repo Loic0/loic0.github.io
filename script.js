@@ -1,26 +1,21 @@
-let is_big = [0, 0, 0, 0, 0, 0];
+let is_big = new Array(document.querySelectorAll('.project').length).fill(0);
+
 let one_already_big = 0;
 let is_personal_project = 1;
 
 window.onresize = move;
 
 const project_center = document.getElementById("center-project-circle");
+const project_switch = document.getElementById("switch-project-type");
+
+// #132F63, #FABB5A, #F7F1EA, #F6554D
 
 
 document.getElementById("project-contener").addEventListener("click", on_personal_project_click);
 document.getElementById("school-contener").addEventListener("click", on_school_project_click);
-document.getElementById("center-project-circle").addEventListener("click", toggle_project_type);
+document.getElementById("switch-project-type").addEventListener("click", toggle_project_type);
 document.getElementById("bottom-contener").addEventListener("click", exit_full_screen_project);
 
-function on_personal_project_click() {
-    project_center.textContent = "Personal Projects"
-    is_personal_project = 1;
-}
-
-function on_school_project_click() {
-    project_center.textContent = "School Projects"
-    is_personal_project = 0;
-}
 
 function toggle_project_type() {
     is_personal_project = (is_personal_project == 0);
@@ -33,9 +28,37 @@ function toggle_project_type() {
     }
 }
 
+/*
+project_center.addEventListener("mouseenter", function( event ) {   
+    event.target.style.background = "purple";
+  }, false);
+  project_center.addEventListener("mouseleave", function( event ) {   
+    event.target.style.background = "";
+  }, false);*/
+
+function on_personal_project_click() {
+    project_center.textContent = "Personal Projects";
+    project_center.style.background = '#317AC1';
+
+    project_switch.textContent = "School Projects";
+    project_switch.style.background = '#5c91c5';
+    is_personal_project = 1;
+}
+
+function on_school_project_click() {
+    project_center.textContent = "School Projects";
+    project_center.style.background = '#5c91c5';
+
+    project_switch.textContent = "Personal Projects";
+    project_switch.style.background = '#317AC1';
+    is_personal_project = 0;
+}
+
+
 function exit_full_screen_project() {
 
     if (one_already_big) {
+
         document.querySelectorAll('.project').forEach((project, index) => {
 
             if (is_big[index]) {
@@ -48,7 +71,8 @@ function exit_full_screen_project() {
 
 function move() {
     document.querySelectorAll('.project').forEach((project, index) => {
-        let angle = index * 72 - 90;  
+
+        let angle = index * (360 / document.querySelectorAll('.project').length) - 90;  
         
         let project_default_height = window.innerHeight * 0.15;
         let project_default_width = window.innerWidth * 0.15;
@@ -57,7 +81,7 @@ function move() {
         let bottom_box = document.getElementById('bottom-contener');
         
         let center_circle_radius = center_circle.offsetWidth / 2;
-        let distance_from_circle = bottom_box.offsetHeight * 0.33; 
+        let distance_from_circle = bottom_box.offsetHeight * 0.31; 
 
         function placeRectangle() {
             const x = (center_circle_radius + distance_from_circle) * Math.cos(angle * Math.PI / 180);
@@ -78,9 +102,10 @@ function move() {
 move();
 
 document.querySelectorAll('.project').forEach((project, index) => {
-    let angle = index * 72 - 90;  
+    let angle = index * (360 / document.querySelectorAll('.project').length) - 90;  
 
     project.addEventListener('click', function() {
+
         event.stopPropagation();
         let is_animating = true;
         let distance_from_center;
@@ -92,7 +117,7 @@ document.querySelectorAll('.project').forEach((project, index) => {
         let center_circle = document.getElementById('center-project-circle');
         let bottom_box = document.getElementById('bottom-contener');
         let center_circle_radius = center_circle.offsetWidth / 2;
-        let distance_from_circle = bottom_box.offsetHeight * 0.33;
+        let distance_from_circle = bottom_box.offsetHeight * 0.31;
 
         if ((one_already_big == 0) || (is_big[index])) {
             is_big[index] = (is_big[index] == 0);
@@ -134,10 +159,24 @@ document.querySelectorAll('.project').forEach((project, index) => {
 
             if (is_big[index]) {
                 project.style.transform = "scale(5.7)";
+                project.style.querySelectorAll
+
+
+
+
             } else {
                 project.style.opacity = 1;
                 project.style.transform = "scale(1)";
             }
         }
+
+        document.getElementsByClassName('project')[index].classList.toggle('active');
+        
     });
+
+    
 });
+
+
+
+

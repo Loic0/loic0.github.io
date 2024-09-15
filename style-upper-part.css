@@ -1,0 +1,98 @@
+.upper-contener {
+    height: 100vh;
+    /*width: 100vw;*/
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 2%;
+    grid-row-gap: 2%;
+
+
+    /*background-color: rgb(237, 166, 100);*/
+    padding: 2%;
+}
+   
+
+
+.resume-contener {
+    grid-area: 2 / 1 / 5 / 5;
+
+    height: 100%;
+    width: 100%;
+    background-color: #317AC1;
+    border-radius: 10vh;
+    
+    padding: 5%;
+}
+
+
+
+#school-contener {
+    grid-area: 1 / 5 / 3 / 7;
+
+    height: min(30vh, 30vw);
+    width: min(30vh, 30vw);
+    background-color: #317AC1;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 3.5rem;
+    color: #000000;
+}
+
+.work-contener {
+    grid-area: 4 / 5 / 6 / 9; 
+
+    height: 100%;
+    width: 100%;
+    background-color: #317AC1;
+    border-radius: min(10vh, 10vw);
+
+    align-items: center;
+    text-align: center;
+    padding: 0 5% 0 5%;
+
+}
+
+
+#project-contener {
+    grid-area: 2 / 7 / 4 / 9;  
+
+    height: min(30vh, 30vw);
+    width: min(30vh, 30vw);
+    background-color: #317AC1;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+    
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 3.5rem;
+    color: #000000;
+    
+    padding: 0 5% 0 5%;
+}
+
+
+#project-contener:hover {
+    background-color: #E1A624;
+}
+
+#school-contener:hover {
+    background-color: #E1A624;
+}
+
