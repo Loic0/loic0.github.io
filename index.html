@@ -11,7 +11,6 @@
     - favicon
   -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
   <!--
     - custom css link
   -->
@@ -65,6 +64,8 @@
 
         <ul class="contacts-list">
 
+          
+
           <li class="contact-item">
 
             <div class="icon-box">
@@ -112,12 +113,27 @@
             <div class="icon-box">
               <ion-icon name="car-sport-outline"></ion-icon>
             </div>
+            
 
             <div class="contact-info">
               <p class="contact-title">driving licence</p>
 
               <a class="contact-link">Car driver's license</a>
             </div>
+
+            <li class="contact-item">
+
+              <div class="icon-box">
+                <ion-icon name="flag-outline"></ion-icon>
+              </div>
+  
+              <div class="contact-info">
+                <p class="contact-title"  id="demo">Nationality</p>
+  
+                <a class="contact-link">French</a>
+              </div>
+  
+            </li>
 
           </li>
 
@@ -139,9 +155,12 @@
         </ul>
 
 
-        <div class="separator"></div>
+        
 
         <!--
+
+        <div class="separator"></div>
+        
         <ul class="social-list">
 
           <li class="social-item">
@@ -305,7 +324,7 @@
                 <h4 class="h4 service-item-title">Personal projects</h4>
 
                 <p class="service-item-text">
-                  I carry out personal projects that allow me to develop my knowledge.
+                  I do personal projects that allow me to develop my knowledge.
                 </p>
               </div>
 
@@ -661,11 +680,9 @@
               <span>2023 — Present</span>
 
               <p class="timeline-text">
-                - Programming embedded code in C<br>
-                - Electronic schematics design<br>
-                - PCB routing<br>
-                - Creation of test equipment<br>
-
+                I work in the design office of COMAT, an equipment manufacturer in the space sector. 
+                I work on software and hardware for reaction wheels. 
+                I had the opportunity to work on embedded code, pcb schematics and routing.
               </p>
 
             </li>
@@ -677,8 +694,8 @@
               <span>April — July 2023</span>
 
               <p class="timeline-text">
-                - Do embedded programming in C and the associated electronics<br>
-                - Writing documents such as test procedures
+                During my internship in this design office, I was able to do embedded programming in C and the associated electronics. 
+                I also wrote documents such as test procedures.
               </p>
 
             </li>
@@ -818,8 +835,8 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="personal projects">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="personal projects" data-project="automatic-sprinkler">
+              <a>
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -829,15 +846,15 @@
                   <img src="./assets/img/arroseur-automatique.jpg" alt="Automatic sprinkler" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Automatic sprinkler</h3>
+                <button class="project-title" >Automatic Sprinkler</button>
 
                 <p class="project-category">Personal project</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="personal projects">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="personal projects"  data-project="automatic-sprinkler-v2">
+              <a>
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -847,15 +864,15 @@
                   <img src="./assets/img/pot.jpg" alt="Automatic sprinkler V2" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Automatic sprinkler V2</h3>
+                <h3 class="project-title">Automatic Sprinkler V2</h3>
 
                 <p class="project-category">Personal project</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="personal projects">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="personal projects" data-project="helicopter-joystick">
+              <a>
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -872,8 +889,8 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="personal projects">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="personal projects" data-project="vinted-bot">
+              <a>
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -890,6 +907,7 @@
               </a>
             </li>
 
+            <!--
             <li class="project-item  active" data-filter-item data-category="personal projects">
               <a href="#">
 
@@ -906,10 +924,10 @@
                 <p class="project-category">Personal project</p>
 
               </a>
-            </li>
+            </li>-->
 
-            <li class="project-item  active" data-filter-item data-category="personal projects">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="personal projects" data-project="bluetooth-car">
+              <a>
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -1277,48 +1295,255 @@
 
 
 
+
+
+      
       <!--
-        - #CONTACT
+      ========================================================================================================================================================
+      
+      AUTOMATIC SPRINKLER
+
+      ========================================================================================================================================================
       -->
 
-      <article class="contact" data-page="contact">
+
+      
+      <article class="project-div" data-page="automatic-sprinkler">
 
         <header>
-          <h2 class="h2 article-title">Contact</h2>
+          <h2 class="h2 article-title">Automatic Sprinkler</h2>
         </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+        <section class="project-text">
+          
+          <img src="./assets/img/arroseur-automatique.jpg" alt="Automatic sprinkler" loading="lazy">
 
-        <section class="contact-form">
+          
+        <h3>Goal</h3>
+        <p>
+          Automatically waters a plant (currently in service since 08 July 2022, photo taken on 28 November 2022)
+        </p>
 
-          <h3 class="h3 form-title">Contact Form</h3>
+        <h3>How it works</h3>
+        <p>
+            An arduino captures the humidity in the ground and activates or not the pump so that the humidity is maintained between two levels. By using the water contained in any tank set aside.
+        </p>
+            
+        <h3>Components</h3>
+        <p>
+            - A pump<br>
+            - An arduino<br>
+            - Other electronic components (transistor, LED)
 
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
+        </p>
+        
+        <div>
+          <h4 class="tm-text-gray-dark mb-3">Software</h3>
+              <img src="assets/img/arduinoLogo.png" alt="Image" class="img-fluid" style="margin-right:15px; width: 50px;">
+        </div>
 
         </section>
 
       </article>
+
+      
+      <!--
+      ========================================================================================================================================================
+      
+      AUTOMATIC SPRINKLER V2
+
+      ========================================================================================================================================================
+      -->
+      
+      <article class="project-div" data-page="automatic-sprinkler-v2">
+
+        <header>
+          <h2 class="h2 article-title">Automatic Sprinkler V2</h2>
+        </header>
+
+        <section class="project-text">
+          
+          <img src="./assets/img/pot.jpg" alt="Automatic sprinkler V2" loading="lazy">
+
+          <h4 class="tm-text-gray-dark mb-3">Goal</h4>
+          <p class="mb-4">
+              Automatically waters the plant in the upper part of the pot.
+          </p>
+
+          <h4 class="tm-text-gray-dark mb-3">Functioning</h4>
+          <p class="mb-4">
+              An electronic circuit of my design manages the watering so that the humidity of the soil in the pot is maintained.<br>
+              The pot is sealed via a seal which allows water to be retained in the two lower parts and a hole at the back allows the tank to be filled.
+          </p>
+              
+          <h4 class="tm-text-gray-dark mb-3">Components</h4>
+          <p class="mb-4">
+              - 3 parts modeled and printed in 3D <br>
+              - A pump <br>
+              - Electronic components (transistors, resistances, LED, LM324, NE555)
+          </p>
+
+          <h4 class="tm-text-gray-dark mb-3">Dimensions</h4>
+          <p class="mb-4">
+              12 X 12 X 11 cm
+          </p>
+
+          
+            <h4 >Software</h4>
+            <div class="softwares">
+                <img src="assets/img/LTspice.png" alt="Image" class="img-fluid" style="margin-right:15px; width: 50px;">
+                <img src="assets/img/fusion360.png" alt="Image" class="img-fluid" style="margin-right:15px; width: 50px;">
+                <img src="assets/img/cura.png" alt="Image" class="img-fluid" style="margin-right:15px; width: 50px;">
+          </div>
+        </section>
+
+      </article>
+
+      
+      <!--
+      ========================================================================================================================================================
+      
+      HELICOPTER JOYSTICK
+
+      ========================================================================================================================================================
+      -->
+
+
+      <article class="project-div" data-page="helicopter-joystick">
+
+        <header>
+          <h2 class="h2 article-title">Helicopter Joystick</h2>
+        </header>
+
+        <section class="project-text">
+          
+          <img src="./assets/img/manette.jpg" alt="Helicopter Joystick" loading="lazy">
+
+          <h4 class="tm-text-gray-dark mb-3">Goal</h4>
+          <p class="mb-4">
+              Controller for playing helicopter games.
+          </p>
+
+          <h4 class="tm-text-gray-dark mb-3">Functioning</h4>
+          <p class="mb-4">
+              A gyroscope measures the inclination of the joystick to be able to steer the helicopter.<br>
+              Recovering the buttons on the board from the old toy, we can perform further actions.
+          </p>
+              
+          <h4 class="tm-text-gray-dark mb-3">Components</h4>
+          <p class="mb-4">
+              - Old helicopter handle<br>
+              - A gyroscope<br>
+              - An arduino leonardo
+          </p>
+
+          <h4 class="tm-text-gray-dark mb-3">Dimensions</h4>
+          <p class="mb-4">
+              8 X 12 X 19 cm
+          </p>
+
+          <div>
+              <h4 class="tm-text-gray-dark mb-3">Software</h3>
+                  <img src="assets/img/arduinoLogo.png" alt="Image" class="img-fluid" style="margin-right:15px; width: 50px;">
+          </div>
+        </section>
+
+      </article>
+
+      
+      <!--
+      ========================================================================================================================================================
+      
+      VINTED BOT
+
+      ========================================================================================================================================================
+      -->
+      
+      <article class="project-div" data-page="vinted-bot">
+
+        <header>
+          <h2 class="h2 article-title">Vinted Bot</h2>
+        </header>
+
+        <section class="project-text">
+          
+          <img src="./assets/img/vinted.png" alt="vinted bot" loading="lazy">
+
+          <h4 class="tm-text-gray-dark mb-3">Goal</h4>
+          <p class="mb-4">
+              Robot looking for an item at the best price on Vinted.
+          </p>
+
+          <h4 class="tm-text-gray-dark mb-3">Functioning</h4>
+          <p class="mb-4">
+              By sending a command to the robot on a Discord chat, we launch a search for an article. We can choose a size, a brand, a maximum price, the condition of the object sought, its brand...<br>
+              Searches are kept in a database so that the robot can search continuously until an article comes out to be the first notified of its exit.<br>
+              We can choose to receive a Discord message when the robot finds an article with the image, and the link of the article.
+          </p>
+
+              <h4 class="tm-text-gray-dark mb-3">Software</h3>
+                <div class="softwares">
+                  <img src="assets/img/python.png" alt="Image" class="img-fluid" style="margin-right:15px; width: 50px;">
+                  <img src="assets/img/mysql.png" alt="Image" class="img-fluid" style="margin-right:15px; width: 50px;">
+          </div>
+        </section>
+
+      </article>
+      
+      <!--
+      ========================================================================================================================================================
+      
+      BLUETOOTH CAR
+
+      ========================================================================================================================================================
+      -->
+
+      
+      <article class="project-div" data-page="bluetooth-car">
+
+        <header>
+          <h2 class="h2 article-title">Bluetooth car</h2>
+        </header>
+
+        <section class="project-text">
+          
+          <img src="./assets/img/voiture-bluetooth.jpg" alt="Bluetooth car" loading="lazy">
+
+          <h4 class="tm-text-gray-dark mb-3">Goal</h4>
+          <p class="mb-4">
+              Car controlled by bluetooth via the phone.
+          </p>
+
+          <h4 class="tm-text-gray-dark mb-3">Functioning</h4>
+          <p class="mb-4">
+              Recovery of a remote-controlled car with some modifications such as a servo motor for the steering. The arduino enables bluetooth communication with the phone.
+          </p>
+              
+          <h4 class="tm-text-gray-dark mb-3">Components</h4>
+          <p class="mb-4">
+              - Old cableco -mandated car <br>
+              - a bluetooth module <br>
+              - a servomotor <br>
+              - an arduino
+
+          </p>
+
+          <h4 class="tm-text-gray-dark mb-3">Dimensions</h4>
+          <p class="mb-4">
+              10 X 10 X 22 cm
+          </p>
+
+          <div>
+              <h4 class="tm-text-gray-dark mb-3">Software</h3>
+                  <img src="assets/img/arduinoLogo.png" alt="Image" class="img-fluid" style="margin-right:15px; width: 50px;">
+          </div>
+        </section>
+
+      </article>
+
+
+
+
 
     </div>
 

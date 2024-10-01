@@ -151,8 +151,33 @@ for (let i = 0; i < navigationLinks.length; i++) {
         window.scrollTo(0, 0);
       } else {
         pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
+        if (i < 3){navigationLinks[i].classList.remove("active");}
+        //navigationLinks[i].classList.remove("active");
       }
+    }
+
+  });
+}
+
+
+const project_button = document.querySelectorAll("[data-project]")
+
+for (let i = 0; i < project_button.length; i++) {
+
+  project_button[i].addEventListener("click", function () {
+
+    
+
+    for (let i = 0; i < pages.length; i++) {
+      if (this.dataset.project.toLowerCase() === pages[i].dataset.page) {
+        pages[i].classList.add("active");
+        window.scrollTo(0, 0);
+      } else {
+        pages[i].classList.remove("active");
+        if (i < 3){navigationLinks[i].classList.remove("active");}
+        
+      }
+      //document.getElementById("demo").innerHTML = pages[i].dataset.page;
     }
 
   });

@@ -14,7 +14,9 @@
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
-
+.softwares {
+  display: flex;
+}
 :root {
 
   /**
@@ -507,6 +509,16 @@ main {
 .about-text p { margin-bottom: 15px; }
 
 
+.project-text {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+.project-text p { margin-bottom: 15px; }
+.project-text img { width: 100%; }
+
+
 
 /**
  * #service 
@@ -944,6 +956,7 @@ main {
 .project-item.active {
   display: block;
   animation: scaleUp 0.25s ease forwards;
+  cursor: pointer;
 }
 
 @keyframes scaleUp {
@@ -1388,6 +1401,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .about .article-title { margin-bottom: 20px; }
 
   .about-text { margin-bottom: 40px; }
+  .project-text { margin-bottom: 40px; }
 
   /* service */
 
