@@ -182,3 +182,27 @@ for (let i = 0; i < project_button.length; i++) {
 
   });
 }
+
+
+
+// page navigation variables
+const back_buttons = document.getElementsByClassName("back-button")
+
+// add event to all nav link
+for (let i = 0; i < back_buttons.length; i++) {
+  back_buttons[i].addEventListener("click", function () {
+
+    for (let i = 0; i < pages.length; i++) {
+      if ("projects" === pages[i].dataset.page) {
+        pages[i].classList.add("active");
+        navigationLinks[i].classList.add("active");
+        window.scrollTo(0, 0);
+      } else {
+        pages[i].classList.remove("active");
+        if (i < 3){navigationLinks[i].classList.remove("active");}
+        //navigationLinks[i].classList.remove("active");
+      }
+    }
+
+  });
+}

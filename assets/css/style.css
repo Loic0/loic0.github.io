@@ -7,6 +7,18 @@
  * copyright 2022 @codewithsadee
  */
 
+ .icon-text-button
+ {
+  display: flex;
+ }
+.back-button {
+  margin-right: 8px; /* Ajoute un espace entre l'icône et le texte */
+  font-size: 50px; /* Taille de l'icône */
+  color: var(--orange-yellow-crayola);
+  cursor: pointer;
+}
+
+
 
 
 

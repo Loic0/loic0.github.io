@@ -206,7 +206,7 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link" data-nav-link>About me</button>
           </li>
 
           <li class="navbar-item">
@@ -214,7 +214,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link  active" data-nav-link>Projects</button>
           </li>
 
           <!--
@@ -239,7 +239,7 @@
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article class="about" data-page="about me">
 
         <header>
           <h2 class="h2 article-title">About me</h2>
@@ -779,10 +779,10 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio active" data-page="projects">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">My projects</h2>
         </header>
 
         <section class="projects">
@@ -835,24 +835,7 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="personal projects" data-project="automatic-sprinkler">
-              <a>
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/img/arroseur-automatique.jpg" alt="Automatic sprinkler" loading="lazy">
-                </figure>
-
-                <button class="project-title" >Automatic Sprinkler</button>
-
-                <p class="project-category">Personal project</p>
-
-              </a>
-            </li>
-
+            
             <li class="project-item  active" data-filter-item data-category="personal projects"  data-project="automatic-sprinkler-v2">
               <a>
 
@@ -864,12 +847,31 @@
                   <img src="./assets/img/pot.jpg" alt="Automatic sprinkler V2" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Automatic Sprinkler V2</h3>
+                <h3 class="project-title">Automatic Sprinkler V2 - 2023</h3>
 
                 <p class="project-category">Personal project</p>
 
               </a>
             </li>
+
+            <li class="project-item  active" data-filter-item data-category="personal projects" data-project="automatic-sprinkler">
+              <a>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/img/arroseur-automatique.jpg" alt="Automatic sprinkler" loading="lazy">
+                </figure>
+
+                <button class="project-title" >Automatic Sprinkler - 2022</button>
+
+                <p class="project-category">Personal project</p>
+
+              </a>
+            </li>
+
 
             <li class="project-item  active" data-filter-item data-category="personal projects" data-project="helicopter-joystick">
               <a>
@@ -882,7 +884,7 @@
                   <img src="./assets/img/manette.jpg" alt="Helicopter joystick" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Helicopter joystick</h3>
+                <h3 class="project-title">Helicopter joystick - 2022</h3>
 
                 <p class="project-category">Personal project</p>
 
@@ -900,7 +902,7 @@
                   <img src="./assets/img/vinted.png" alt="Vinted bot" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Vinted bot</h3>
+                <h3 class="project-title">Vinted bot - 2020</h3>
 
                 <p class="project-category">Personal project</p>
 
@@ -937,7 +939,7 @@
                   <img src="./assets/img/voiture-bluetooth.jpg" alt="Bluetooth car" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Bluetooth car</h3>
+                <h3 class="project-title">Bluetooth car - 2019</h3>
 
                 <p class="project-category">Personal project</p>
 
@@ -945,7 +947,7 @@
             </li>
 
             
-            <li class="project-item  active" data-filter-item data-category="school projects">
+            <li class="project-item  active" data-filter-item data-category="school projects" data-project="industrial-project">
               <a href="#">
 
                 <figure class="project-img">
@@ -965,7 +967,7 @@
 
             
             
-            <li class="project-item  active" data-filter-item data-category="school projects">
+            <li class="project-item  active" data-filter-item data-category="school projects" data-project="control-project">
               <a href="#">
 
                 <figure class="project-img">
@@ -984,7 +986,7 @@
             </li>
 
             
-            <li class="project-item  active" data-filter-item data-category="school projects">
+            <li class="project-item  active" data-filter-item data-category="school projects" data-project="ai-project">
               <a href="#">
 
                 <figure class="project-img">
@@ -1002,7 +1004,7 @@
               </a>
             </li>
             
-            <li class="project-item  active" data-filter-item data-category="school projects">
+            <li class="project-item  active" data-filter-item data-category="school projects" data-project="database-project">
               <a href="#">
 
                 <figure class="project-img">
@@ -1310,7 +1312,8 @@
       
       <article class="project-div" data-page="automatic-sprinkler">
 
-        <header>
+        <header class="icon-text-button">
+          <ion-icon name="arrow-back-circle-outline" class="back-button"></ion-icon>
           <h2 class="h2 article-title">Automatic Sprinkler</h2>
         </header>
 
@@ -1357,14 +1360,18 @@
       
       <article class="project-div" data-page="automatic-sprinkler-v2">
 
-        <header>
+        <header class="icon-text-button">
+          <ion-icon name="arrow-back-circle-outline" class="back-button"></ion-icon>
           <h2 class="h2 article-title">Automatic Sprinkler V2</h2>
         </header>
 
         <section class="project-text">
           
-          <img src="./assets/img/pot.jpg" alt="Automatic sprinkler V2" loading="lazy">
+          <div class="image-container">
+            <img src="./assets/img/pot.jpg" alt="Automatic sprinkler V2" loading="lazy">
+          </div>
 
+          
           <h4 class="tm-text-gray-dark mb-3">Goal</h4>
           <p class="mb-4">
               Automatically waters the plant in the upper part of the pot.
@@ -1411,7 +1418,8 @@
 
       <article class="project-div" data-page="helicopter-joystick">
 
-        <header>
+        <header class="icon-text-button">
+          <ion-icon name="arrow-back-circle-outline" class="back-button"></ion-icon>
           <h2 class="h2 article-title">Helicopter Joystick</h2>
         </header>
 
@@ -1461,7 +1469,8 @@
       
       <article class="project-div" data-page="vinted-bot">
 
-        <header>
+        <header class="icon-text-button">
+          <ion-icon name="arrow-back-circle-outline" class="back-button"></ion-icon>
           <h2 class="h2 article-title">Vinted Bot</h2>
         </header>
 
@@ -1501,7 +1510,8 @@
       
       <article class="project-div" data-page="bluetooth-car">
 
-        <header>
+        <header class="icon-text-button">
+          <ion-icon name="arrow-back-circle-outline" class="back-button"></ion-icon>
           <h2 class="h2 article-title">Bluetooth car</h2>
         </header>
 
@@ -1541,7 +1551,178 @@
 
       </article>
 
+      
+      <!--
+      ========================================================================================================================================================
+      
+      Industrial project 
 
+      ========================================================================================================================================================
+      -->
+
+      
+      <article class="project-div" data-page="industrial-project">
+
+        <header class="icon-text-button">
+          <ion-icon name="arrow-back-circle-outline" class="back-button"></ion-icon>
+          <h2 class="h2 article-title">Industrial project</h2>
+        </header>
+
+        <section class="project-text">
+
+          <img src="./assets/img/projet industrie.png" alt="industrial project" loading="lazy">
+
+          <h4 class="tm-text-gray-dark mb-3">Goal</h4>
+          <p class="mb-4">
+            The objective of this project was to produce and industrialize a case that satisfied certain technical constraints. We had to design the 3D model, set up the assembly line, and create a schedule for orders and employees. The aim was to supply 10,000 parts in 4 months at the lowest possible price.
+          </p>
+
+          <h4 class="tm-text-gray-dark mb-3">Learned skills</h4>
+          <p class="mb-4">
+            - 3D modeling<br>
+            - Design of the assembly line<br>
+            - Schedule management with GANTT<br>
+            - Finding technical solutions with FAST diagrams<br>
+            - Creating a BOM<br>
+            - APTE method / functional analysis / horned beast diagram<br>
+          </p>
+              
+
+          <div>
+              <h4 class="tm-text-gray-dark mb-3">Software</h3>
+                <div class="softwares">
+                  <img src="assets/img/fusion360.png" alt="Image" class="img-fluid" style="margin-right:15px; width: 50px;">
+                  <img src="assets/img/GanttProject.png" alt="Image" class="img-fluid" style="margin-right:15px; width: 50px;">
+                </div>
+          </div>
+        </section>
+
+      </article>
+
+      
+      <!--
+      ========================================================================================================================================================
+      
+      Control project 
+
+      ========================================================================================================================================================
+      -->
+
+      
+      <article class="project-div" data-page="control-project">
+
+        <header class="icon-text-button">
+          <ion-icon name="arrow-back-circle-outline" class="back-button"></ion-icon>
+          <h2 class="h2 article-title">Control project</h2>
+        </header>
+
+        <section class="project-text">
+
+          <img src="./assets/img/projet asservissement.png" alt="control project" loading="lazy">
+
+          <h4 class="tm-text-gray-dark mb-3">Goal</h4>
+          <p class="mb-4">
+            The objective of this project was to develop a system that could be oriented in one direction using PID control.
+          </p>
+
+          <h4 class="tm-text-gray-dark mb-3">Learned skills</h4>
+          <p class="mb-4">
+            - PID control<br>
+            - Arduino programming<br>
+          </p>
+              
+
+        </section>
+
+      </article>
+
+      <!--
+      ========================================================================================================================================================
+      
+      Database project 
+
+      ========================================================================================================================================================
+      -->
+
+      
+      <article class="project-div" data-page="database-project">
+
+        <header class="icon-text-button">
+          <ion-icon name="arrow-back-circle-outline" class="back-button"></ion-icon>
+          <h2 class="h2 article-title">Database project</h2>
+        </header>
+
+        <section class="project-text">
+
+          <img src="./assets/img/projet bdd.png" alt="control project" loading="lazy">
+
+          <h4 class="tm-text-gray-dark mb-3">Goal</h4>
+          <p class="mb-4">
+            The objective of this project was to create a database for a travel agency using MySQL. It contains passenger and trip information (departure and destination airports, stages, distance, prices...) as well as payment informations.
+          </p>
+
+          <h4 class="tm-text-gray-dark mb-3">Learned skills</h4>
+          <p class="mb-4">
+            - Database creation<br>
+            - SQL queries<br>
+            - Merise method<br>
+          </p>
+
+          <div>
+            <h4 class="tm-text-gray-dark mb-3">Software</h3>
+              <div class="softwares">
+                <img src="assets/img/mysql.png" alt="Image" class="img-fluid" style="margin-right:15px; width: 50px;">
+              </div>
+        </div>
+              
+
+        </section>
+
+      </article>
+
+      
+      <!--
+      ========================================================================================================================================================
+      
+      AI project 
+
+      ========================================================================================================================================================
+      -->
+
+      
+      <article class="project-div" data-page="ai-project">
+
+        <header class="icon-text-button">
+          <ion-icon name="arrow-back-circle-outline" class="back-button"></ion-icon>
+          <h2 class="h2 article-title">AI project</h2>
+        </header>
+
+        <section class="project-text">
+
+          <img src="./assets/img/projet ia.png" alt="control project" loading="lazy">
+
+          <h4 class="tm-text-gray-dark mb-3">Goal</h4>
+          <p class="mb-4">
+            The objective of this project was to develop an artificial intelligence system to determine the type of fire. Using satellite data on fire starts in Turkey, we learned how to determine useful data and train an artificial intelligence model.
+          </p>
+
+          <h4 class="tm-text-gray-dark mb-3">Learned skills</h4>
+          <p class="mb-4">
+            - AI training<br>
+            - Data selection<br>
+          </p>
+
+          <div>
+            <h4 class="tm-text-gray-dark mb-3">Software</h3>
+              <div class="softwares">
+                <img src="assets/img/python.png" alt="Image" class="img-fluid" style="margin-right:15px; width: 50px;">
+              </div>
+        </div>
+              
+
+        </section>
+
+      </article>
 
 
 
